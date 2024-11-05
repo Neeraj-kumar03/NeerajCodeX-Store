@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JsEcommerce</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" crossorigin href="/assets/style-BXmZES1Q.css">
+</head>
+
+<body>
+    <!-- NAvbar Section Start -->
+    <header class="section section-navbar">
+        <section class="top-text ">
+            <div class="head container grid grid-two-cols">
+                <div class="head_txt">
+                    <p>Free shipping, 30-day return or refund guarantee.</p>
+                </div>
+                <div class="sign_in_up">
+                    <a href="#">SIGN IN</a>
+                    <a href="#">SIGN UP</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="menu-bar">
+            <div class="container navbar">
+                <div class="menu-logo">
+                    <a href="index.html">
+                        <img src="./img/brandlogo.png" alt="Brand Logo" class="brand_logo">
+                    </a>
+                </div>
+                
+                <div class="hamburger" onclick="toggleMenu()">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+                  <div class="menu-items" id="menu">
+                    <div class="close-btn" onclick="closeMenu()">×</div> 
+                    <ul>
+                        <li><a href="./index.html" class=nav-link>HOME</a></li>
+                        <li><a href="./about.html" class=nav-link>ABOUT</a></li>
+                        <li><a href="./product.html" class=nav-link>PRODUCTS</a></li>
+                        <li><a href="./contact.html" class=nav-link>CONTACT</a></li>
+                        <li><a href="./addToCart.html" class="add-to-cart-button" id="cartvalue"> <i
+                                    class="fa-solid fa-cart-shopping"> 0</i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </header>
+
+    <!-- START HERO SECTION -->
+    <main>
+        <section class="section-hero">
+            <div class="container grid grid-two-cols">
+                <div class="section-hero-content">
+                    <p class="hero-subheading">Explore the Latest in Tech Industries</p>
+                    <h1 class="hero-heading">Your Destination for Cutting-Edge Gadgets!</h1>
+                    <p class="hero-para">Welcome to Thapa eComStore, your ultimate destination for cutting-edge gadgets!
+                        Explore
+                        the
+                        latest in tech innovation and style with us. Shop now and discover a world of possibilities!</p>
+                    <div class="hero-btn">
+                        <a href="#" class="btn">Explore Our Products</a>
+                    </div>
+                </div>
+                <div class="section-hero-img">
+                    <figure>
+                        <img src="./img/hero-img.png" alt="">
+                    </figure>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- START EXTRA SECTION -->
+    <section class="section-extra-product">
+        <div class="container grid grid-three-cols">
+            <div class="div-extra grid grid-two-cols">
+                <div class="extra-text">
+                    <p>new year sale</p>
+                    <h3>get and extra 50% off</h3>
+                    <a href="#">Show Now</a>
+                </div>
+                <div class="extra-img extra-laptop">
+                    <figure>
+                        <img src="./img/laptop.png" alt="">
+                    </figure>
+                </div>
+            </div>
+
+            <div class="div-extra grid grid-two-cols">
+                <div class="extra-text">
+                    <p>new year sale</p>
+                    <h3>40% discount on speakers</h3>
+                    <a href="#">Show Now</a>
+                </div>
+                <div class="extra-img extra-laptop">
+                    <figure>
+                        <img src="./img/earphone.png" alt="">
+                    </figure>
+                </div>
+            </div>
+
+            <div class="div-extra grid grid-two-cols">
+                <div class="extra-text">
+                    <p>new year sale</p>
+                    <h3>get and extra 50% off</h3>
+                    <a href="#">Show Now</a>
+                </div>
+                <div class="extra-img extra-laptop">
+                    <figure>
+                        <img src="./img/mobile.png" alt="">
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- START POLICY SECTION -->
+    <section class="section-policy">
+        <div class="container grid grid-four-cols">
+            <div class="div-policy">
+                <div class="policy-icon">
+                    <i class="fa-solid fa-truck-fast"></i>
+                </div>
+                <div class="div-policy-text">
+                    <p>worldwide shipping</p>
+                    <p>order above $100</p>
+                </div>
+            </div>
+
+            <div class="div-policy">
+                <div class="policy-icon">
+                    <i class="fa-solid fa-arrows-rotate"></i>
+                </div>
+                <div class="div-policy-text">
+                    <p>
+                        Easy 30 Day Returns</p>
+                    <p>Back Returns in 7 Days</p>
+                </div>
+            </div>
+
+            <div class="div-policy">
+                <div class="policy-icon">
+                    <i class="fa-solid fa-hand-holding-dollar"></i>
+                </div>
+                <div class="div-policy-text">
+                    <p>money back guarantee </p>
+                    <p>guarantee with in 30-Days</p>
+                </div>
+            </div>
+
+            <div class="div-policy">
+                <div class="policy-icon">
+                    <i class="fa-solid fa-headset"></i>
+                </div>
+                <div class="div-policy-text">
+                    <p>Easy Online Support</p>
+                    <p>24/7 Any time support</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- START WHY CHOOSE US SECTION -->
+    <section class="section-why-choose">
+        <div class="container">
+            <h2 class="section-common-heading">Why Choose CodeQuery Store</h2>
+            <p class="section-common-subheading why-chose-text">Choose Neeraj EduHub for a holistic, enriching learning
+                experience that
+                empowers you to achieve your goals.</p>
+        </div>
+
+        <div class="container grid grid-three-cols">
+            <!-- left div -->
+            <div class="chose-left-div text-align-left">
+                <div class="why-chose-div">
+                    <p class="common-text-number">1</p>
+                    <h3 class="common-text-title">Wide Selection</h3>
+                    <p class="why-chose-text">CodeQyery Store offers a diverse range of gadgets, from smartphones to
+                        smart home devices, ensuring you find
+                        what you need to elevate your lifestyle and meet your tech requirements.</p>
+                </div>
+
+                <div class="why-chose-div">
+                    <p class="common-text-number">2</p>
+                    <h3 class="common-text-title">Quality Assurance</h3>
+                    <p class="why-chose-text">Every gadget at CodeQuery Store undergoes rigorous quality checks,
+                        guaranteeing reliability and performance, so you can shop with confidence knowing you're getting
+                        the best.</p>
+                </div>
+
+                <div class="why-chose-div">
+                    <p class="common-text-number">3</p>
+                    <h3 class="common-text-title">Competitive Prices</h3>
+                    <p class="why-chose-text">Enjoy great value with Neeraj Store's competitive prices on high-quality
+                        gadgets, making top-of-the-line technology accessible to all without compromising on quality or
+                        performance.</p>
+                </div>
+            </div>
+            <!-- center div -->
+            <div class="chose-center-div">
+                <figure>
+                    <img src="./img/whychose.png" alt="Chose To Us">
+                </figure>
+            </div>
+            <!-- right div -->
+            <div class="chose-right-div">
+                <div class="why-chose-div">
+                    <p class="common-text-number">4</p>
+                    <h3 class="common-text-title">Expert Guidance</h3>
+                    <p class="why-chose-text">Our knowledgeable staff provides expert guidance, helping you choose the
+                        right gadget to meet your needs and preferences, ensuring you make informed decisions every step
+                        of the way.</p>
+                </div>
+
+                <div class="why-chose-div">
+                    <p class="common-text-number">5</p>
+                    <h3 class="common-text-title">Convenient Shopping</h3>
+                    <p class="why-chose-text">With CodeX Store, shopping for gadgets is easy and convenient. Our
+                        user-friendly website and secure payment options ensure a seamless experience from browsing to
+                        checkout, all from the comfort of your home.</p>
+                </div>
+
+                <div class="why-chose-div">
+                    <p class="common-text-number">6</p>
+                    <h3 class="common-text-title">Excellent Service</h3>
+                    <p class="why-chose-text">CodeX Store is committed to providing excellent service to our customers.
+                        From prompt assistance with inquiries to efficient handling of orders and deliveries, we
+                        prioritize your satisfaction every step of the way.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- START FOOTER SECTION -->
+    <footer class="section-footer">
+        <div class="footer-container container">
+            <div class="content1">
+                <img src="./img/brandlogo.png" alt="brand_logo">
+                <p>Welcome to CodeQuery EcomStore, your ultimate destination for cutting-edge gadgets!</p>
+            </div>
+
+            <div class="content2 ">
+                <h4>shopping</h4>
+                <li><a href="#">Computer Store</a></li>
+                <li><a href="#">Laptop Store</a></li>
+                <li><a href="#">Accessories</a></li>
+                <li><a href="#">Sales & Discount</a></li>
+            </div>
+            <div class="content3">
+                <h4>Experience</h4>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Payment Method</a></li>
+                <li><a href="#">Delivery</a></li>
+                <li><a href="#">Return and Exchange</a></li>
+            </div>
+            <div class="content4">
+                <h4>NewsLetter</h4>
+                <p>Be the first to know about new
+                    arrivals, sales & promos!</p>
+            </div>
+        </div>
+
+        <div class="f-design">
+            <div class="f-design-txt">
+                <p>Design and Code by Neeraj <span style="color: yellowgreen;">CodeQuery</span></p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="toggle.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JsEcommerce</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script type="module" crossorigin src="/assets/addToCart-Bfsn3dFJ.js"></script>
+  <link rel="modulepreload" crossorigin href="/assets/showToast-Cs4oU5FK.js">
+  <link rel="stylesheet" crossorigin href="/assets/style-BXmZES1Q.css">
+</head>
+
+<body>
+    <!-- NAvbar Section Start -->
+    <header class="section section-navbar">
+        <section class="top-text ">
+            <div class="head container grid grid-two-cols">
+                <div class="head_txt">
+                    <p>Free shipping, 30-day return or refund guarantee.</p>
+                </div>
+                <div class="sign_in_up">
+                    <a href="#">SIGN IN</a>
+                    <a href="#">SIGN UP</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="menu-bar">
+            <div class="container navbar">
+                <div class="menu-logo">
+                    <a href="index.html">
+                        <img src="./img/brandlogo.png" alt="Brand Logo" class="brand_logo">
+                    </a>
+                </div>
+
+                <div class="hamburger" onclick="toggleMenu()">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+                <div class="menu-items" id="menu">
+                    <div class="close-btn" onclick="closeMenu()">×</div>
+                    <ul>
+                        <li><a href="#" class=nav-link>HOME</a></li>
+                        <li><a href="#" class=nav-link>ABOUT</a></li>
+                        <li><a href="#" class=nav-link>PRODUCTS</a></li>
+                        <li><a href="#" class=nav-link>CONTACT</a></li>
+                        <li><a href="#" class="add-to-cart-button" id="cartvalue"> <i class="fa-solid fa-cart-shopping">
+                                    0</i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </header>
+
+    <!-- AddToCart Section Start -->
+    <section class="addToCartElement">
+        <div class="container">
+            <section>
+                <div id="productCartContainer"></div>
+            </section>
+
+            <section class="productCartTotalElem">
+                <div class="productcartotalelement">
+                    <p>Selected Offer Summary</p>
+                    <div class="productordertotal">
+                        <div>
+                            <p>Sub Total: </p>
+                            <p class="productsubtotal">0</p>
+                        </div>
+                        <div>
+                            <p>Tax:</p>
+                            <p class="productTax">₹50</p>
+                        </div>
+                        <hr>
+                        <div>
+                            <p>Final Total:</p>
+                            <p class="productFinalTotal">0</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </section>
+
+    <!-- Template for product -->
+    <template id="productcarttemplate">
+        <div class="cards" id="cardvalue">
+            <article class="information [ card ]">
+                <div>
+                    <span class="category"></span>
+                </div>
+                <div class="imageContainer">
+                    <img src="" alt="" class="productimage">
+                </div>
+
+                <h2 class="productname"></h2>
+                <p class="productprice"></p>
+
+                <div class="stockElement">
+                    <button class="increment">+</button>
+                    <p class="productquantity">1</p>
+                    <button class="decrement">-</button>
+                </div>
+
+                <button class="addToCart remove-to-cart-button">Remove</button>
+            </article>
+        </div>
+    </template>
+
+
+    <!-- START FOOTER SECTION -->
+    <footer class="section-footer">
+        <div class="footer-container container">
+            <div class="content1">
+                <img src="./img/brandlogo.png" alt="brand_logo">
+                <p>Welcome to CodeQuery EcomStore, your ultimate destination for cutting-edge gadgets!</p>
+            </div>
+
+            <div class="content2 ">
+                <h4>shopping</h4>
+                <li><a href="#">Computer Store</a></li>
+                <li><a href="#">Laptop Store</a></li>
+                <li><a href="#">Accessories</a></li>
+                <li><a href="#">Sales & Discount</a></li>
+            </div>
+            <div class="content3">
+                <h4>Experience</h4>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Payment Method</a></li>
+                <li><a href="#">Delivery</a></li>
+                <li><a href="#">Return and Exchange</a></li>
+            </div>
+            <div class="content4">
+                <h4>NewsLetter</h4>
+                <p>Be the first to know about new
+                    arrivals, sales & promos!</p>
+            </div>
+        </div>
+
+        <div class="f-design">
+            <div class="f-design-txt">
+                <p>Design and Code by Neeraj <span style="color: yellowgreen;">CodeQuery</span></p>
+            </div>
+        </div>
+    </footer>
+
+
+
+</body>
+
+</html>
